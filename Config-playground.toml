@@ -1,0 +1,4 @@
+[[relays]]
+name = "flashbots-test"
+url = "https://localhost:80"
+priority = 0
