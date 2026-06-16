@@ -1,0 +1,13 @@
+/usr/local/bin/reth node \
+    --datadir /mnt/md0/rethdata \
+    --authrpc.jwtsecret /secrets/jwt.hex \
+    --authrpc.addr 127.0.0.1 \
+    --authrpc.port 8551 \
+    --http \
+    --ws \
+    --ws.addr 127.0.0.1 \
+    --ws.port 8545 \
+    --rpc-max-connections 429496729 \
+    --http.api trace,web3,eth,debug \
+    --ws.api trace,web3,eth,debug \
+    --engine.persistence-threshold "0" --engine.memory-block-buffer-target "0"
